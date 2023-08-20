@@ -10,6 +10,7 @@ sourceCompatibility = '11'
 
 repositories {
 	mavenCentral()
+	//MavenRepository에서 Download 해온다.
 }
 
 dependencies {
