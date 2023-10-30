@@ -6,9 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletResponse;
-import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class HelloController {
@@ -19,7 +18,6 @@ public class HelloController {
         model.addAttribute("data", "hello!!"); // data 부분은 html이 받을 이름 값이다. | hello!! 부분은 넘겨줄 값이다.
         return "hello";
     }
-
 
     // 전체 Import 단축키 Eclipse = Ctrl Shift O | Intellij = Ctrl Alt O
     //@RequestParam 이런 파라미터 정보 보는 단축 키 Ctrl P
