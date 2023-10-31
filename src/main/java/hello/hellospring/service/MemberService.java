@@ -9,12 +9,16 @@ import java.util.Optional;
 
 public class MemberService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     /**
      * 회원 가입
      */
-    public Long Join(Member member) { //같은 이름이 있는 중복 회원 가입 X (기획 업무 예시)
+    public Long join(Member member) { //같은 이름이 있는 중복 회원 가입 X (기획 업무 예시)
 
         //Optional<Member> result = memberRepository.findByName(member.getName()); // 변수 추출하기 Command (Ctrl + Alt + V) >> 코드를 더 간결하게 처리
         validateDuplicateMember(member); // 원하는 부분을 드래그 후 (Ctrl + Alt + M) 메소드로 추출하기

@@ -20,6 +20,7 @@ public class HelloController {
     }
 
     // 전체 Import 단축키 Eclipse = Ctrl Shift O | Intellij = Ctrl Alt O
+
     //@RequestParam 이런 파라미터 정보 보는 단축 키 Ctrl P
     @GetMapping("hello-mvc")
     public String helloMvc(@RequestParam("name") String name, Model model) {
