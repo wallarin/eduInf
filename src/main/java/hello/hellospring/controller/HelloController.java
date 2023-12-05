@@ -32,6 +32,8 @@ public class HelloController {
     @ResponseBody //http에서 body 부의 값을 직접 내려주겠다는 의미
     // HTML의 형식 없이 JSON와 같은 데이터만 내려줄 때를 위해 사용한다.
     public String helloString(@RequestParam("name") String name) {
+
+        System.out.println("출력합니다 : " + name);
         return "hello " + name;
     }
 
