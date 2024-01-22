@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 import java.sql.*;
 import java.util.*;
 
-public class JdbcTemplateMemberRepository implements MemberRepository {
+public class JdbcTemplateMemberRepository implements MemberRepository { //?
 
     private final JdbcTemplate jdbcTemplate;
 

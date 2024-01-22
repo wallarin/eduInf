@@ -10,7 +10,7 @@ import javax.persistence.EntityManager;
 import javax.sql.DataSource;
 
 @Configuration
-public class SpringConfig {
+public class SpringConfig { //?
 
     //private DataSource dataSource;
     //private EntityManager em;

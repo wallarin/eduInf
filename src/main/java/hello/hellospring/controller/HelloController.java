@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-public class HelloController {
+public class HelloController { //?
 
     @GetMapping("hello")
     // URL 이름을 매핑시켜준다.
